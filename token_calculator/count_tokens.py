@@ -17,13 +17,16 @@ def count_tokens(file_path):
     return "{:,}".format(len(tokens))
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(
         description="Count the number of tokens in a text file."
     )
     parser.add_argument("file_path", type=str, help="Path to the .txt file.")
-
     args = parser.parse_args()
 
     num_tokens = count_tokens(args.file_path)
     print(f"Number of tokens: {num_tokens}")
+
+
+if __name__ == "__main__":
+    main()

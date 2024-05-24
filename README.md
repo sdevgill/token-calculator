@@ -26,7 +26,13 @@ A Python script to count the number of tokens in a `.txt` file using the `tiktok
 
 2. **Run the script**:
     ```bash
-    python count_tokens.py path/to/your/file.txt
+    python token_calculator/count_tokens.py path/to/your/file.txt
+    ```
+
+    Or using poetry:
+
+    ```bash
+    poetry run count_tokens path/to/your/file.txt
     ```
 
     Replace `path/to/your/file.txt` with the actual path to the `.txt` file.
